@@ -6,10 +6,10 @@ toc: true
 
 Lua material functors allow custom logic for processing material properties. They can read property values, set shader inputs and shader options, configure render states, adjust material property visibility in the editor, and more.
 
-For general information on the Lua programming language, see [Learning Lua](docs/user-guide/scripting/lua/#learning-lua).
+For general information about the Lua programming language, see [Learning Lua](/docs/user-guide/scripting/lua/#learning-lua).
 
 {{< note >}}
-*Lua material functors* are distinct from *[Lua gameplay scripts](docs/user-guide/scripting/lua/)*. While they both use the Lua language, the APIs and programming environment are mostly separate. Features like EBuses, the Properties Table, and Entity integration are exclusive to gameplay scripts, and are not available to Lua material functors. The [Lua Math Library](/docs/user-guide/scripting/lua/math-library/) is the only part of the API that is common to both systems.
+*Lua material functors* are distinct from *[Lua gameplay scripts](/docs/user-guide/scripting/lua/)*. While they both use the Lua language, the APIs and programming environment are mostly separate. Features like EBuses, the Properties table, and Entity integration are exclusive to gameplay scripts, and are not available to Lua material functors. The [Lua Math Library](/docs/user-guide/scripting/lua/math-library/) is the only part of the API that is common to both systems.
 {{< /note >}}
 
 ## Name context
@@ -106,7 +106,7 @@ Each **GetMaterialPropertyValue\_** function takes a `string` property name and 
 
 ### HasMaterialProperty(`string`)
 
-Returns a boolean whether a property with the given name exists. Note the material property does not have to be listed in [GetMaterialPropertyDependencies](#main-functions) because this functions is just checking availability, not *reading values*.
+Returns a boolean whether a property with the given name exists. Note the material property does not have to be listed in [GetMaterialPropertyDependencies](#main-functions) because this function is checking availability only, not *reading values*.
 
 ### SetShaderConstant\_
 

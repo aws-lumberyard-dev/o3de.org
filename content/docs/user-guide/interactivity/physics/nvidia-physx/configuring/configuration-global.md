@@ -53,6 +53,21 @@ The joint hierarchy options apply to PhysX joints only. They do not apply to act
 {{< /note >}}
 
 | Property | Description |
+| --- | --- |
+| Debug Draw Center of Mass Size  |  The size of the debug draw circle that represents the center of the mass. Possible values are from `0.1` to `5.0` meters.  The default value is `0.1`.  |
+| Debug Draw Center of Mass Color  |  The color of the debug draw circle that represents the center of mass. To specify a color, enter its RGB values in the text box. The color of the icon next to the text box shows the color that you entered. The default values are `255`, `0`, `0` (red).  |
+| Global Collision Debug  |  Set up global collision debug draw.<br />**Enable all colliders** Displays all PhysX collider shapes, including colliders previously set as hidden.<br />**Disable all colliders** Hides all PhysX collider shapes, including colliders previously set as visible.<br />**Set manually** You can update PhysX colliders on each entity. This is the default.  |
+| Global Collision Debug Color Mode  | Set up debug color mode.<br />**Material Color Mode** Uses material's debug color specified in material library.<br />**Error Mode** Shows glowing red error colors for cases like meshes with too many triangles.  |
+| Display Joints Hierarchy  |  Flag to switch on and off the display of joint lead-follower connections in the viewport. The default is on.  |
+| Joints Hierarchy Lead Color  |  Color of the **lead** half of a lead-follower joint connection line.  |
+| Joints Hierarchy Follower Color  |  Color of the **follower** half of a lead-follower joint connection line.  |
+| Joints Hierarchy Distance Threshold  |  Minimum distance required to draw from follower to joint. Distances shorter than this threshold will result in the line drawn from the joint to the lead. The default is `1.0`.  |
+
+{{< note >}}
+These options are part of the PhysX gem and are not related to the Debug Draw gem or the [PhysX Debug](/docs/user-guide/gems/reference/physics/nvidia/physx-debug/) gem.
+{{< /note >}}
+
+| Property | Description |
 | - | - |
 | **Debug Draw Center of Mass Size** | The size of the debug draw circle that represents the center of the mass. Possible values are from `0.1` to `5.0` meters.  The default value is `0.1`.  |
 | **Debug Draw Center of Mass Color** | The color of the debug draw circle that represents the center of mass. To specify a color, enter its RGB values in the text box. The icon displays the selected color. The default values are `255`, `0`, `0` (red).  |
@@ -65,7 +80,7 @@ The joint hierarchy options apply to PhysX joints only. They do not apply to act
 
 ## Wind configuration 
 
-The following table describes the settings for **Wind Configuration**. See [Create global or localized wind forces with PhysX](/docs/user-guide/interactivity/physics/nvidia-physx/wind-provider/) for more details.
+The following table describes the settings for **Wind Configuration**. For more information, refer to [Create Wind Forces](/docs/learning-guide/tutorials/physx/wind-provider).
 
 | Property | Description |
 | --- | --- |
