@@ -1,10 +1,12 @@
 ---
-title: "Render Pipelines"
-description: "You can use pre-built render pipelines or create custom ones in Atom Renderer, the graphics engine integrated into Open 3D Engine (O3DE)."
+linkTitle: Render Pipelines
+title: Render Pipelines in Atom Renderer
+description: You can use pre-built render pipelines or create custom ones in Atom Renderer, the graphics engine integrated into Open 3D Engine (O3DE).
 toc: false
+weight: 150
 ---
 
-A *render pipeline* describes a sequence of steps to render a 3D scene to a 2D screen. In **Atom Renderer**, the render pipeline is completely modular and driven by a series of passes. This allows you to customize the render pipeline for features, such as shadows, lighting, and post effects. You can also completely change the rendering technique; for example, to Deferred, Checkerboard, or Forward+. By default, Atom implements *Forward+* rendering in its pre-built render pipelines.
+A *render pipeline* describes a sequence of steps to render a 3D scene on a 2D screen. In **Atom Renderer**, the render pipeline is completely modular and driven by a series of passes. This lets you customize the render pipeline for features such as shadows, lighting, and post effects. You can also completely change the rendering technique, for example, to Deferred, Checkerboard, or Forward+. By default, Atom implements *Forward+* rendering in its pre-built render pipelines.
 
 Atom's pre-built render pipelines are ready to use and encompass common use cases for **Open 3D Engine (O3DE)**:
 - **Main Rendering Pipeline**: The default render pipeline for Windows, Linux, and macOS platforms. 
@@ -88,7 +90,7 @@ To enable or disable a pass in the render pipeline:
 1. In the render pipeline's `.pass` file, find the pass that you want to enable or disable in the `PassRequests` list. 
 2. Set the `Enabled` property to true or false.
    
-When you enable or disable a pass, the pass system automatically updates the connections in the pass hierarchy. This requires that you've set up fallback connections. For more information, refer to [PassTemplate File Specification](content/docs/atom-guide/dev-guide/passes/pass-template-file-spec/)
+When you enable or disable a pass, the pass system automatically updates the connections in the pass hierarchy. This requires that you've set up fallback connections. For more information, refer to [PassTemplate File Specification](/docs/atom-guide/dev-guide/passes/pass-template-file-spec/)
 
 For example, in the `PassRequests` section of the `MainPipeline.pass`, disable `DeferredFogPass` in the render pipeline by setting `Enabled` to false.
 ```JSON

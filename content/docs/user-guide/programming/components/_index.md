@@ -5,19 +5,17 @@ description: Learn how to create and reflect components in C++ using the O3DE Co
 weight: 140
 ---
 
-This guide provides engine and game programmers with examples and best practices for creating and reflecting custom O3DE components in C++. For information on using the component entity system in O3DE Editor, see [Entity Inspector](/docs/user-guide/editor/entity-inspector).
+This section provides engine and game programmers with examples and best practices for creating and reflecting custom **Open 3D Engine (O3DE)** components in C++. For information about using the component entity system in **O3DE Editor**, refer to [Entity Inspector](/docs/user-guide/editor/entity-inspector).
 
 ## Topics
 
 + [Overview](./overview)
 + [Creating a Component](./create-component)
-+ [Reflecting a Component for Serialization and Editing](./reflection)
++ [Reflection Contexts](./reflection)
 + [Defining and Using Component Services](./services)
-+ [Editor Components](./entity-system-pg-editor-components)
-+ [Creating System Components](./system-wide)
++ [Editor Components](./editor-components)
++ [System Components](./system-components)
 + [Components and EBuses](./ebus-integration)
 + [Tick Bus and Components](./tick)
 + [Exposing Custom Components to Track View for Animation](./expose-animation)
 + [Components and EBuses: Best Practices](./entity-system-pg-components-ebuses-best-practices)
-+ [Behavior Context In-Depth](./behavior-context)
-+ [Edit Context](./edit-context)

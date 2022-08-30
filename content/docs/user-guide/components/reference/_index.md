@@ -50,6 +50,7 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | Component | Description | 
 | - | - |
 | [Bloom](/docs/user-guide/components/reference/atom/bloom/) | Simulates real-world light bleeding, or glow. |
+| [CubeMap Capture](/docs/user-guide/components/reference/atom/cubemap-capture/) | Captures a Specular IBL or Diffuse IBL cubemap at the entity position. |
 | [Decal (Atom)](/docs/user-guide/components/reference/atom/decal/) | Projects a texture material in a single direction onto mesh surfaces. |
 | [Deferred Fog](/docs/user-guide/components/reference/atom/deferred-fog/) | Creates a screen space fog effect that can ben used as scene fog or layered / ground fog with an optional cloud noise turbulence. |
 | [Depth of Field](/docs/user-guide/components/reference/atom/depth-of-field/) | Simulates the lens effects of real world cameras that focus on a specific area. |
@@ -131,16 +132,16 @@ The components below are grouped by type as they appear in the O3DE Editor.
 
 | Component | Description | 
 | - | - |
-| Altitude Gradient | Generates a gradient based on height within a range. |
-| Constant Gradient | Returns a specified value as a gradient when sampled. |
-| FastNoise Gradient | Generates gradient values using [FastNoise](https://github.com/Auburn/FastNoiseLite), a noise generation library with a collection of real-time noise algorithms. |
-| Image Gradient | Generates a gradient by sampling an image asset. |
-| Perlin Noise Gradient | Generates a gradient by sampling a perlin noise generator. |
-| Random Noise Gradient | Generates a gradient by sampling a random noise generator.|
-| Reference Gradient | References another gradient. |
-| Shape Falloff Gradient | Generates a gradient based on the distance from a shape. |
-| Slope Gradient | Generates a gradient based on the surface angle. |
-| Surface Mask Gradient | Generates a gradient based on the underlying surface types. |
+| [Altitude Gradient](./gradients/altitude-gradient) | Generates a gradient based on height within a range. |
+| [Constant Gradient](./gradients/constant-gradient) | Returns a specified value as a gradient when sampled. |
+| [FastNoise Gradient](./gradients/fastnoise-gradient) | Generates gradient values using [FastNoise](https://github.com/Auburn/FastNoiseLite), a noise generation library with a collection of real-time noise algorithms. |
+| [Image Gradient](./gradients/image-gradient) | Generates a gradient by sampling an image asset. |
+| [Perlin Noise Gradient](./gradients/perlin-noise-gradient) | Generates a gradient by sampling a perlin noise generator. |
+| [Random Noise Gradient](./gradients/random-noise-gradient) | Generates a gradient by sampling a random noise generator.|
+| [Reference Gradient](./gradients/reference-gradient) | References another gradient. |
+| [Shape Falloff Gradient](./gradients/shape-falloff-gradient) | Generates a gradient based on the distance from a shape. |
+| [Slope Gradient](./gradients/slope-gradient) | Generates a gradient based on the surface angle. |
+| [Surface Mask Gradient](./gradients/surface-mask-gradient) | Generates a gradient based on the underlying surface types. |
 
 <!-- 
 ### Networking
@@ -183,6 +184,7 @@ The components below are grouped by type as they appear in the O3DE Editor.
 
 | Component | Description | 
 | - | - |
+| [Axis Aligned Box Shape](/docs/user-guide/components/reference/shape/axis-aligned-box-shape/) | Creates box geometry that is always axis-aligned. |
 | [Box Shape](/docs/user-guide/components/reference/shape/box-shape/) | Generates box geometry for volumes and triggers. |
 | [Capsule Shape](/docs/user-guide/components/reference/shape/capsule-shape/) | Generates capsule geometry for volumes and triggers. |
 | [Compound Shape](/docs/user-guide/components/reference/shape/compound-shape/) | Builds complex geometry from simple shapes for volumes and triggers. |

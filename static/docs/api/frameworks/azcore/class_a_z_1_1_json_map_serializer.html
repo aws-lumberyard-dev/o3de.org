@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzCore API Reference
-   &#160;<span id="projectnumber">2107.1 (Developer Preview)</span>
+   &#160;<span id="projectnumber">2205.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -88,9 +88,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a717975d397b31e271b209258c2c66868"><td class="memItemLeft" align="right" valign="top"><a id="a717975d397b31e271b209258c2c66868"></a>
 virtual <a class="el" href="class_a_z_1_1_json_serialization_result_1_1_result.html">JsonSerializationResult::Result</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LoadContainer</b> (void *outputValue, const <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a> &amp;outputValueTypeId, const rapidjson::Value &amp;inputValue, <a class="el" href="class_a_z_1_1_json_deserializer_context.html">JsonDeserializerContext</a> &amp;context)</td></tr>
 <tr class="separator:a717975d397b31e271b209258c2c66868"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90fd370b37c20b10ed765a6714e8feb2"><td class="memItemLeft" align="right" valign="top"><a id="a90fd370b37c20b10ed765a6714e8feb2"></a>
-virtual <a class="el" href="class_a_z_1_1_json_serialization_result_1_1_result.html">JsonSerializationResult::Result</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LoadElement</b> (void *outputValue, <a class="el" href="class_a_z_1_1_serialize_context_1_1_i_data_container.html">SerializeContext::IDataContainer</a> *container, const <a class="el" href="struct_a_z_1_1_serialize_context_1_1_class_element.html">SerializeContext::ClassElement</a> *pairElement, <a class="el" href="class_a_z_1_1_serialize_context_1_1_i_data_container.html">SerializeContext::IDataContainer</a> *pairContainer, const <a class="el" href="struct_a_z_1_1_serialize_context_1_1_class_element.html">SerializeContext::ClassElement</a> *keyElement, const <a class="el" href="struct_a_z_1_1_serialize_context_1_1_class_element.html">SerializeContext::ClassElement</a> *valueElement, const rapidjson::Value &amp;key, const rapidjson::Value &amp;value, <a class="el" href="class_a_z_1_1_json_deserializer_context.html">JsonDeserializerContext</a> &amp;context)</td></tr>
-<tr class="separator:a90fd370b37c20b10ed765a6714e8feb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb5480a0aa7dbbb34b883c415205c6a7"><td class="memItemLeft" align="right" valign="top"><a id="aeb5480a0aa7dbbb34b883c415205c6a7"></a>
+virtual <a class="el" href="class_a_z_1_1_json_serialization_result_1_1_result.html">JsonSerializationResult::Result</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LoadElement</b> (void *outputValue, <a class="el" href="class_a_z_1_1_serialize_context_1_1_i_data_container.html">SerializeContext::IDataContainer</a> *container, const <a class="el" href="struct_a_z_1_1_serialize_context_1_1_class_element.html">SerializeContext::ClassElement</a> *pairElement, <a class="el" href="class_a_z_1_1_serialize_context_1_1_i_data_container.html">SerializeContext::IDataContainer</a> *pairContainer, const <a class="el" href="struct_a_z_1_1_serialize_context_1_1_class_element.html">SerializeContext::ClassElement</a> *keyElement, const <a class="el" href="struct_a_z_1_1_serialize_context_1_1_class_element.html">SerializeContext::ClassElement</a> *valueElement, const rapidjson::Value &amp;key, const rapidjson::Value &amp;value, <a class="el" href="class_a_z_1_1_json_deserializer_context.html">JsonDeserializerContext</a> &amp;context, bool isMultiMap=false)</td></tr>
+<tr class="separator:aeb5480a0aa7dbbb34b883c415205c6a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29bad5fc732d97a5e32466d301fb83ee"><td class="memItemLeft" align="right" valign="top"><a id="a29bad5fc732d97a5e32466d301fb83ee"></a>
 virtual <a class="el" href="class_a_z_1_1_json_serialization_result_1_1_result.html">JsonSerializationResult::Result</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Store</b> (rapidjson::Value &amp;outputValue, const void *inputValue, const void *defaultValue, const <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a> &amp;valueTypeId, <a class="el" href="class_a_z_1_1_json_serializer_context.html">JsonSerializerContext</a> &amp;context, bool sortResult)</td></tr>
 <tr class="separator:a29bad5fc732d97a5e32466d301fb83ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,9 +184,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Transforms the data from the rapidjson Value to outputValue, if the conversion is possible and supported. The serializer is responsible for casting to the proper type and safely writing to the outputValue memory. </p>
+<p>Transforms the data from the rapidjson Value to outputValue, if the conversion is possible and supported. The serializer is responsible for casting to the proper type and safely writing to the outputValue memory. </p><dl class="section note"><dt>Note</dt><dd>The default implementation is to load the object ignoring a custom serializers for the type, which allows for custom serializers to modify the object after all default loading has occurred. </dd></dl>
 
-<p>Implements <a class="el" href="class_a_z_1_1_base_json_serializer.html#a2acd7149854464af4689b595ee2006b4">AZ::BaseJsonSerializer</a>.</p>
+<p>Reimplemented from <a class="el" href="class_a_z_1_1_base_json_serializer.html#a34963e8a26e53c6527080f4ffadcf67c">AZ::BaseJsonSerializer</a>.</p>
 
 </div>
 </div>
@@ -241,9 +241,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Write the input value to a rapidjson value if the default value is not null and doesn't match the input value, otherwise an error is returned and sets the rapidjson value to a null value. </p>
+<p>Write the input value to a rapidjson value if the default value is not null and doesn't match the input value, otherwise an error is returned and sets the rapidjson value to a null value. </p><dl class="section note"><dt>Note</dt><dd>The default implementation is to store the object ignoring custom serializers. </dd></dl>
 
-<p>Implements <a class="el" href="class_a_z_1_1_base_json_serializer.html#a8b72f1a2ac4a58ada3ed4f9ab75c6a03">AZ::BaseJsonSerializer</a>.</p>
+<p>Reimplemented from <a class="el" href="class_a_z_1_1_base_json_serializer.html#a6ea9a0b73b2024a6e46fe8be7137e201">AZ::BaseJsonSerializer</a>.</p>
 
 <p>Reimplemented in <a class="el" href="class_a_z_1_1_json_unordered_multi_map_serializer.html#a301f0b6396e6d26fb9570be1a2cc4b37">AZ::JsonUnorderedMultiMapSerializer</a>, and <a class="el" href="class_a_z_1_1_json_unordered_map_serializer.html#a4af0d378dc0e8eb7d2d1c739b450fae4">AZ::JsonUnorderedMapSerializer</a>.</p>
 
@@ -255,7 +255,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 1 2021 13:14:22 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 5 2022 15:17:16 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

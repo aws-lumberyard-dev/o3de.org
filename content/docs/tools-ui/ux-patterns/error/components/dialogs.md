@@ -15,9 +15,9 @@ toc: true
 
 2. **Close Button**: Closes the dialog without resolving the issue.
 
-3. **Icon**: A standard icon and has a size of 48 x 48px. Refer to [Standard Icons](/docs/tools-ui/patterns/error/overview.md#standard-icons). 
+3. **Icon**: A standard icon and has a size of 48 x 48px. Refer to [Standard Icons](../overview#standard-icons). 
 
-4. **Body**: Contains information regrding the user's task and how to resolve it. 
+4. **Body**: Contains information regarding the user's task and how to resolve it. 
 
 5. **Actions**: The primary and optional secondary call-to-action buttons that resolve or exit the dialog.
 
@@ -42,14 +42,14 @@ Review these specifications when creating a dialog:
 
 * Briefly describe the dialog's task or purpose in the title in the dialog's header.
 
-* Write relevant information to help users complete the dialog's task in the title and body of the dialog. Refer to [Guidelines for Writing Error Messages](/docs/tools-ui/patterns/error/guidelines.md).
+* Write relevant information to help users complete the dialog's task in the title and body of the dialog. Refer to [Guidelines for Writing Error Messages](../guidelines).
 
 
-* Include only one icon, if any. Use one of the following icons from the list of [Standard icons](/docs/tools-ui/patterns/error/overview.md#standard-icons): error/failure, warning, success, or information icon.
+* Include only one icon, if any. Use one of the following icons from the list of [Standard icons](../overview#standard-icons): error/failure, warning, success, or information icon.
 
 * Include a primary button and/or an optional secondary button for the dialog's actions. 
   
-  * Use the primary button for a primary action. Primary buttons are have a blue background, making it more distinct to the user. Write an actionable text on the primary button such as "Save", "Restart", or "Open". 
+  * Use the primary button for a primary action. Primary buttons have a blue background, making it more distinct to the user. Write an actionable text on the primary button such as "Save", "Restart", or "Open". 
 
 * Use the secondary button for alternative options or passive actions such as "Cancel" or "OK".
 

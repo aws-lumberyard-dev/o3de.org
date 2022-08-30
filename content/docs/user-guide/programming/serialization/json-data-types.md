@@ -1,9 +1,11 @@
 ---
-description: ' How JSON types convert to internal O3DE data types. '
-title: Data types in serialized JSON
+linkTitle: JSON Serialization of O3DE Data Types
+title: JSON Serialization of O3DE Data Types
+description: Learn how JSON types convert to internal Open 3D Engine (O3DE) data types.
+weight: 400
 ---
 
-In addition to primitive C++ types that map directly to JSON types, O3DE supports serializing many `AZStd` library objects. JSON output and deserialized objects are entirely deterministic based on the appropriate C++ type. For some more information on how members are registered and how their types are determined through the reflection system, see [JSON serialization](json-serialize-deserialize/#serialization).
+In addition to primitive C++ types that map directly to JSON types, **Open 3D Engine (O3DE)** supports serializing many `AZStd` library objects. JSON output and deserialized objects are entirely deterministic based on the appropriate C++ type. For information on how members are registered and how their types are determined through the reflection system, refer to [Serialization](json-serialize-deserialize/#serialization) in the **Serialize and Deserialize JSON Objects** topic.
 
 This topic is a reference of the types supported by O3DE serialization and deserialization, how the serializer maps them by default, and information on how JSON types are coerced back to C++ types.
 
@@ -115,12 +117,26 @@ The serialization of map types \(`AZStd::map`, `AZStd::unordered_map`, `AZStd::u
 
 Other internal types supported by JSON serialization are *UUID* and *color*.
 
+### Uuid
+
 `AZ::Uuid` are mapped to JSON strings by `AZ::Uuid::ToString()`, and strings are converted back to UUIDs from `AZ::Uuid::CreateString()`.
 
-Color types are serialized to JSON arrays containing 3 float values for RGB colors, and 4 values for RGBA. JSON arrays of 3 or 4 values can be deserialized directly back to RGB or RGBA, but JSON objects can also be deserialized to colors. For an object to be deserialized to a color, it must have exactly one key of the following names, with an equivalent value type.
+### Color
 
+Color values can be represented as JSON in several ways, giving users flexibility to use whichever approach best suits their needs.
 
-**Color deserialization from JSON objects**
+#### Color deserialization from arrays
+
+Color types are serialized to JSON arrays containing 3 float values for RGB colors, and 4 values for RGBA. JSON arrays of 3 or 4 values can be deserialized directly back to RGB or RGBA.
+
+| Key | Value type | Example |
+| --- | --- | --- |
+| RGB | Array of 3 floating point elements. | \[1.0, 0.3, 0.2\] |
+| RGBA | Array of 4 floating point elements. | \[1.0, 0.3, 0.2, 0.8\] |
+
+#### Color deserialization from JSON objects
+
+JSON objects can also be deserialized to colors, allowing for other common encodings of the color value. For an object to be deserialized to a color, it must have exactly one key of the following names, with an equivalent value type.
 
 | Key | Value type | Example |
 | --- | --- | --- |
