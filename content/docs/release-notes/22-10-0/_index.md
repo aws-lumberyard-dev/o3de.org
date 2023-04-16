@@ -90,7 +90,7 @@ toc: true
 
 - Added a TGA image loader to load TGA images, which replaces the use of QImage. It handles more TGA file formats. [#11161](https://github.com/o3de/o3de/pull/11161)
 
-- Switched to use tiled resource for streaming images for DX12 backend. [#10981](https://github.com/o3de/o3de/10981).
+- Switched to use tiled resource for streaming images for DX12 backend. [#10981](https://github.com/o3de/o3de/pull/10981).
 
 - Removed the default image pool budget caps. [#11345](https://github.com/o3de/o3de/pull/11345)
 

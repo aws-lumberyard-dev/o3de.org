@@ -27,3 +27,8 @@
 /docs/user-guide/programming/ebus-design            /docs/user-guide/programming/messaging/ebus-design
 /docs/user-guide/programming/az-interface           /docs/user-guide/programming/messaging/az-interface
 /docs/user-guide/programming/az-event               /docs/user-guide/programming/messaging/az-event
+
+/docs/release-notes/archive/21-11-release-notes.md          /docs/release-notes/21-11-release-notes.md
+/docs/release-notes/archive/2107-1-release-notes.md         /docs/release-notes/2107-1-release-notes.md
+/docs/release-notes/archive/2111-2-release-notes.md         /docs/release-notes/2111-2-release-notes.md
+/docs/release-notes/archive/22-10-0/*                       /docs/release-notes/22-10-0/:splat

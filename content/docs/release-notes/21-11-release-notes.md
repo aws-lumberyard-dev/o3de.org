@@ -321,7 +321,7 @@ Open 3D Engine Project Manager now has improvements which allow the support of G
 * `consol`e is not working on server launcher.
 * The legacy GridMate networking layer is still shipped in code. We recommend you do **not** use it for networking. Instead, use the new O3DE networking components: [O3DE Networking documentation](/docs/user-guide/networking/).
 * Mouse controls are not friendly to working over remote desktop connections. See https://github.com/o3de/o3de/issues/5339. You may need to turn off **Capture Mouse Cursor** mode in the editor (**Edit** -> **Editor Settings** -> **Global Preferences** -> **Camera**)
-* On CPUs with 6 or less hardware threads, the Editor may freeze during certain editing scenarios due to running out of internal Job Manager threads.  The number of CPU hardware threads affects the number of Job Manager threads created, which currently has a hard minimum value of 2. At 6 CPU hardware threads, this minimum is reached. The issue can be worked around by creating a `user\Registry\boostrap.setreg` file with the following contents:
+* On CPUs with 6 or less hardware threads, the Editor may freeze during certain editing scenarios due to running out of internal Job Manager threads.  The number of CPU hardware threads affects the number of Job Manager threads created, which currently has a hard minimum value of 2. At 6 CPU hardware threads, this minimum is reached. The issue can be worked around by creating a `user/Registry/boostrap.setreg` file with the following contents:
 
   ```json
   { "Amazon": { "AzCore": { "Runtime": { "ConsoleCommands": { "cl_jobThreadsMinNumber": 3 } } } } }
