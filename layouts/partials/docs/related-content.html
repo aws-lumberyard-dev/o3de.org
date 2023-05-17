@@ -1,0 +1,22 @@
+<div class="content">
+<table>
+    <thead>
+        <tr>
+            <th>Topic</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{ with .GetTerms "feature" }}
+        {{ range . }}
+        {{ range .Data.Pages }}
+            <tr>
+                <td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
+                <td>{{ .Params.description }}</td>
+            </tr> 
+        {{ end }}
+        {{ end }}
+        {{ end }}       
+    </tbody>
+</table>
+</div>

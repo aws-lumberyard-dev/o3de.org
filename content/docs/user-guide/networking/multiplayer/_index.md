@@ -3,6 +3,7 @@ linktitle: Multiplayer
 title: Multiplayer Framework
 description: Learn about multiplayer support in Open 3D Engine (O3DE) and how to use the multiplayer framework that the Multiplayer Gem provides.
 weight: 200
+feature: networking
 ---
 
 The multiplayer framework that the **Multiplayer Gem** provides is built on top of `AzNetworking`. The Multiplayer Gem supports entity-based asynchronous networking in **Open 3D Engine (O3DE)**, using event-driven network properties and remote procedure calls to synchronize O3DE components and entities across a network, giving you tools to make a multiplayer game.

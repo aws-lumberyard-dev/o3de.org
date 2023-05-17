@@ -3,6 +3,7 @@ linktitle: AzNetworking
 title: AzNetworking Framework
 description: Learn about the low-level networking stack in Open 3D Engine (O3DE).
 weight: 100
+feature: networking
 ---
 
 `AzNetworking` is a low-level network interface in **Open 3D Engine (O3DE)**. `AzNetworking` provides simple, fast, and efficient networking by focusing on reduced code size and complexity, low latency on packet send and receive operations, and low message processing overhead.

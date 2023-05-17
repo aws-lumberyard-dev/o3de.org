@@ -1,6 +1,5 @@
 baseURL = "https://www.o3de.org"
 title = "Open 3D Engine"
-disableKinds = ["taxonomy", "taxonomyTerm"]
 copyright = "O3DE Open 3D Engine Contributors | Documentation Distributed under CC-BY 4.0"
 languageCode = "en-us"
 
@@ -125,3 +124,8 @@ identifier = "docs"
 name = "CONTRIBUTE"
 url = "/contribute"
 weight = 4
+
+
+[taxonomies]
+  feature = 'feature'
+

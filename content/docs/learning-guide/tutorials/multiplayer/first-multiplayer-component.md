@@ -2,6 +2,8 @@
 linktitle: Your First Network Component
 title: Your First Network Component
 description: In this tutorial you will learn how to use the Multiplayer Gem to create multiplayer components in Open 3D Engine (O3DE). The tutorial uses the O3DE Multiplayer Sample project as a base project to get you started.
+feature: networking
+type: tutorial
 ---
 
 Follow this tutorial to get started with creating multiplayer components in **Open 3D Engine (O3DE)**. By the end of the tutorial, you'll know how to create a new network component that has a network property and a remote procedure call.

@@ -2,6 +2,7 @@
 linktitle: Multiplayer
 title: Multiplayer Gem
 description:  Create multiplayer games with the Open 3D Engine (O3DE) Multiplayer Gem.
+feature: networking
 ---
 
 **Open 3D Engine (O3DE)** ships with a **Multiplayer Gem** that uses the [O3DE networking stack](/docs/user-guide/networking/) to offer services used for multiplayer projects.

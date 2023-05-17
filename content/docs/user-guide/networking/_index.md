@@ -3,6 +3,7 @@ linkTitle: Networking
 title: Networking
 description: Learn about the low-level networking stack in Open 3D Engine (O3DE) and the Multiplayer Gem that uses it to provide multiplayer features in games and simulations.
 weight: 950
+feature: Networking
 ---
 
 **Open 3D Engine (O3DE)** includes the following networking and multiplayer features:

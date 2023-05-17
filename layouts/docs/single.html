@@ -19,6 +19,8 @@
           <div class="col-12 col-xl-10 order-3 order-xl-2">
             <h1 class="title">{{ .Page.Title | markdownify }}</h1>
             {{ partial "docs/content.html" . }}  
+            <h2 class="related-content">Related content</h2>
+            {{ partial "docs/related-content.html" . }}
             <hr class="mt-5" />   
             {{ partial "docs-footer.html" . }}
           </div>
